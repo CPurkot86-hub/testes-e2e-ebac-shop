@@ -1,0 +1,28 @@
+[
+    {
+        "nome": "Claudia",
+        "sobrenome": "Luz",
+        "empresa": "Google",
+        "endereco": "AV teste ebac",
+        "numero": "2023",
+        "pais": "Brasil",
+        "cidade": "São Paulo",
+        "estado": "São Paulo",
+        "cep": "82010-210",
+        "telefone": "4199999999",
+        "email": "teste@teste.com"
+    },
+    {
+        "nome": "Sergio",
+        "sobrenome": "Lua",
+        "empresa": "Uol",
+        "pais": "Brasil",
+        "endereco": "AV teste ebac 2",
+        "numero": "2023",
+        "cidade": "Penha",
+        "estado": "Santa Catarina",
+        "cep": "82010-210",
+        "telefone": "4199999999",
+        "email": "teste@teste.com.br"
+    }
+]
