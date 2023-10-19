@@ -32,9 +32,8 @@ Cypress.Commands.add('login', (usuario, senha) => {
 });
 
 // Adiciona produtos ao carrinho do menu de compras
-Cypress.Commands.add('addProdutos', (produto,tamanho, cor, quantidade) => {
-    cy.get('[class="product-block grid"]')
-        .contains(produto).click()
+Cypress.Commands.add('addProdutos', (produto, tamanho, cor, quantidade) => {
+    cy.get('[class="product-block grid"]').contains(produto).click()
     cy.get('.button-variable-item-' + tamanho).click()
     cy.get('.button-variable-item-' + cor).click()
     cy.get('.input-text').clear().type(quantidade)
@@ -45,10 +44,7 @@ Cypress.Commands.add('addProdutos', (produto,tamanho, cor, quantidade) => {
 // Adiciona o Produto 04 ao carrinho usando o Search
 Cypress.Commands.add('addProdutosSearch', (produto, tamanho, cor, quantidade) => {
     cy.get("#tbay-header input[type='text']").click().clear().type(produto, { delay: 0 });
-
-    cy.get('.search > .tbay-search-form > .form-ajax-search > .form-group > .input-group > .button-group > .button-search')
-        .click();
-
+    cy.get('.search > .tbay-search-form > .form-ajax-search > .form-group > .input-group > .button-group > .button-search').click();
     cy.get('.product_title').should('contain', produto)
     cy.get('.input-text').clear().type(quantidade)
     cy.get('.button-variable-item-' + tamanho).click()
