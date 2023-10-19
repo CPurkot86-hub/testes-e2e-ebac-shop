@@ -11,4 +11,3 @@ export const TEST_MSG = {
     myAccountText: "Minha conta",
     productsText: "Produtos"
 }
-
